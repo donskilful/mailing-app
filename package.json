@@ -1,0 +1,32 @@
+{
+  "name": "mailing-app",
+  "version": "1.0.0",
+  "description": "mailing application",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "author": "donskilful",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "express": "^4.18.2",
+    "logger": "^0.0.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.4",
+    "pino": "^8.14.2",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/logger": "^0.0.1",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.4.5",
+    "@types/nodemailer": "^6.4.9",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
